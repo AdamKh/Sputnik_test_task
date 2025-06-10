@@ -1,0 +1,46 @@
+@use "@/app/styles/variables" as vars;
+
+.productCard {
+  display: flex;
+
+  max-width: 500px;
+  background-color: vars.$primary-color;
+  border-radius: 20px;
+  padding: 20px;
+
+  .info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 200px;
+
+    @media screen and (max-width: vars.$breakpoint-sm) {
+      width: 100%;
+    }
+  }
+
+  .title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #827ec3;
+  }
+
+  .origin {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #7a7a7a;
+  }
+
+  .price {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    display: block;
+  }
+}
