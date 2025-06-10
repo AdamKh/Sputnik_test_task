@@ -1,0 +1,8 @@
+@use "@/app/styles/variables" as vars;
+
+.main {
+  padding: 20px 0;
+  padding-left: vars.$main-paddings;
+  padding-right: vars.$main-paddings;
+  flex: 1;
+}
